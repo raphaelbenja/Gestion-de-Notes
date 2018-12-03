@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Documents/NetBeansProjects/Projet2018/dist/lib/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/jfoenix-8.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/controlsfx-8.40.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/AnimateFX-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/jfoenix-9.0.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/jasperreports-6.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kurosaki/Downloads/TrayNotification.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

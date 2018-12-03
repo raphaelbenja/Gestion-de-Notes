@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditMatiereController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="409.0" style="-fx-background-color: #fff;">
+               <children>
+                  <JFXTextField fx:id="id" disable="true" editable="false" layoutX="100.0" layoutY="182.0" prefHeight="25.0" prefWidth="209.0" promptText="Numero" />
+                  <JFXTextField fx:id="nom" layoutX="100.0" layoutY="245.0" prefHeight="25.0" prefWidth="209.0" promptText="Nom" />
+                  <JFXComboBox fx:id="coefficient" layoutX="100.0" layoutY="318.0" prefHeight="25.0" prefWidth="209.0" promptText="Coefficient" />
+                  <JFXButton layoutX="100.0" layoutY="406.0" onAction="#btnModifyMatiere" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #157dc8;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Pane prefHeight="140.0" prefWidth="409.0" style="-fx-background-color: #157dc8;">
+                     <children>
+                        <Text fill="WHITE" layoutX="102.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT MATERIAL">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="385.0" layoutY="4.0" onMouseClicked="#closeCurrentWindow" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Exit_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="177.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Graduation%20Cap_96px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

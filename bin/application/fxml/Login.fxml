@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="966.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <StackPane fx:id="rootPane" layoutX="-26.0" layoutY="-13.53125">
+         <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fitHeight="759.0" fitWidth="1016.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/Kurosaki/Videos/69584758-flat-wallpapers.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane focusTraversable="true" layoutX="321.0" layoutY="166.0" opacity="0.78" prefHeight="410.0" prefWidth="376.0" style="-fx-background-color: #000;">
+                     <children>
+                        <JFXTextField fx:id="user" focusColor="#c5c5c5" labelFloat="true" layoutX="92.0" layoutY="119.0" prefHeight="39.0" prefWidth="190.0" promptText="Pseudo or Email" styleClass="JFXTextField" stylesheets="@../styles/style.css">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="pass" focusColor="#c5c5c5" labelFloat="true" layoutX="93.0" layoutY="193.0" prefHeight="25.0" prefWidth="190.0" promptText="Password" styleClass="JFXTextField" stylesheets="@../styles/style.css">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <Hyperlink focusTraversable="false" layoutX="190.0" layoutY="234.0" onAction="#forgotPassword" text="Forgot password">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink focusTraversable="false" layoutX="135.0" layoutY="343.0" onAction="#createUser" text="Create an account">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Text fill="#bfbfbf" fontSmoothingType="LCD" layoutX="154.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                           <font>
+                              <Font name="Cambria" size="22.0" />
+                           </font>
+                        </Text>
+                        <JFXButton fx:id="login" buttonType="RAISED" layoutX="93.0" layoutY="286.0" onAction="#LogUser" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: #157dc8;" text="Log In" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#391a1a" height="19.52" radius="14.0775" width="38.79" />
+                     </effect>
+                  </Pane>
+                  <ImageView fitHeight="75.0" fitWidth="74.0" layoutX="472.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/user.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#949494" layoutX="974.0" layoutY="39.0" onMouseClicked="#btn_exitClick" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="9.4375">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

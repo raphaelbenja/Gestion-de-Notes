@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="875.0" prefWidth="922.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="256.0" prefWidth="922.0" style="-fx-background-color: #ad083c;">
+         <children>
+            <Pane layoutX="33.0" layoutY="144.0" prefHeight="165.0" prefWidth="200.0" style="-fx-background-color: #333;">
+               <children>
+                  <Text fill="WHITE" layoutX="57.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raphaël Benja">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ImageView fitHeight="256.0" fitWidth="930.0" layoutX="-3.0" opacity="0.46" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Videos/68458338-flat-wallpapers.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="899.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Exit_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../images/Menu_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="114.0" fitWidth="200.0" layoutX="33.0" layoutY="144.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Pictures/41104657_10217015775776182_49243724193988608_n.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXTextField layoutX="568.0" layoutY="388.0" prefHeight="26.0" prefWidth="292.0" promptText="Pseudo" unFocusColor="#ad083c" />
+      <JFXTextField layoutX="568.0" layoutY="436.0" prefHeight="26.0" prefWidth="292.0" promptText="Email" unFocusColor="#ad083c" />
+      <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="686.0" prefHeight="37.0" prefWidth="157.0" ripplerFill="#bf2323" style="-fx-background-color: #ad083c;" stylesheets="@../styles/style.css" text="Update info" textFill="WHITE" />
+      <JFXButton layoutX="568.0" layoutY="486.0" style="-fx-background-color: #ad083c;" text="Choose image" textFill="WHITE" />
+      <ImageView fitHeight="125.0" fitWidth="292.0" layoutX="563.0" layoutY="535.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/69584758-flat-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="563.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT USER PROFILE">
+         <font>
+            <Font name="Cambria" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="349.0" lineSpacing="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="          &quot;Sometimes you just get a feeling in the game... I felt like, we have to make a change. We need a spark.&quot;Nick Saban had a gut feeling to play Tua Tagovailoa in the 2018 National Championship.Saviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?Les crevettes sont communément connues sous le nom de &quot;cafards de mer&quot; pour leur type d'alimentationSaviez-vous que les crevettes sont les cafards de l'océan ?" textAlignment="JUSTIFY" wrappingWidth="446.99999175965786">
+         <font>
+            <Font name="Roboto" size="13.0" />
+         </font>
+      </Text>
+      <Rating layoutX="571.0" layoutY="763.0" prefHeight="32.0" prefWidth="280.0" />
+   </children>
+</AnchorPane>

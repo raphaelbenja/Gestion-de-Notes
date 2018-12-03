@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddNoteController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="409.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Pane prefHeight="140.0" prefWidth="409.0" style="-fx-background-color: #157dc8;">
+                     <children>
+                        <Text fill="WHITE" layoutX="133.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW NOTE">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="385.0" layoutY="4.0" onMouseClicked="#closeCurrentWindow" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Exit_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="177.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Graduation%20Cap_96px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <JFXComboBox fx:id="idEtud" layoutX="100.0" layoutY="190.0" onAction="#idEtudItem" prefHeight="25.0" prefWidth="209.0" promptText="Number student" />
+                  <JFXTextField fx:id="matiere" disable="true" layoutX="100.0" layoutY="369.0" prefHeight="25.0" prefWidth="209.0" promptText="Material" />
+                  <JFXButton layoutX="100.0" layoutY="560.0" onAction="#saveStudentMouseClicked" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #157dc8;" text="Add Note" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="note" layoutX="100.0" layoutY="485.0" prefHeight="25.0" prefWidth="209.0" promptText="Note" />
+                  <JFXComboBox fx:id="idMat" layoutX="100.0" layoutY="306.0" onAction="#idMatItem" prefHeight="25.0" prefWidth="209.0" promptText="Number material" />
+                  <JFXTextField fx:id="nom" disable="true" layoutX="100.0" layoutY="245.0" prefHeight="25.0" prefWidth="209.0" promptText="Name" />
+                  <JFXTextField fx:id="classe" disable="true" layoutX="100.0" layoutY="429.0" prefHeight="25.0" prefWidth="209.0" promptText="Classe" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane fx:id="root" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MatiereController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1000.0" stylesheets="@../styles/style.css">
+               <children>
+                  <Pane prefHeight="785.0" prefWidth="227.0" style="-fx-background-color: #7e0032;">
+                     <children>
+                        <ImageView fitHeight="1851.0" fitWidth="227.0" layoutX="1.0" layoutY="-1067.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/69584758-flat-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="82.0" fitWidth="92.0" layoutX="73.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Downloads/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#cdcdcd" layoutX="67.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raphaeël Benja">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutY="264.0" onMouseClicked="#pageDashboard" opacity="0.8" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="126.0" layoutY="21.0" text="Dashboard" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="1.0" layoutY="-1.0" prefHeight="56.0" prefWidth="3.0" style="-fx-background-color: #a02b40;" />
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="78.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Dashboard_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutY="320.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="122.0" layoutY="20.0" text="Edit profile" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="75.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Profile_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="376.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="123.0" layoutY="20.0" text="Project lists" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="73.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Microsoft%20Project_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="690.0" onMouseClicked="#returnLogin" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="LOG OUT" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="71.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Logout%20Rounded%20Up_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="193.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Menu_48px.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROJECTS">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="28.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTERPRISES">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutX="1.0" layoutY="488.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="Sponsorships" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Crowdfunding_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="544.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="My prices" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Price_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutY="600.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="My team" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Team_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="227.0" prefHeight="785.0" prefWidth="777.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <JFXTreeTableView fx:id="table" layoutX="24.0" layoutY="181.0" prefHeight="528.0" prefWidth="733.0" tableMenuButtonVisible="true" />
+                        <JFXButton buttonType="RAISED" layoutX="409.0" layoutY="731.0" onAction="#deleteAction" prefHeight="34.0" prefWidth="151.0" ripplerFill="#e54343" style="-fx-background-color: #dd5044;" text="DELETE" textFill="WHITE" />
+                        <Pane prefHeight="56.0" prefWidth="777.0" style="-fx-background-color: #8d2b40;">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="743.0" layoutY="18.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Exit_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Text fill="#6f6f6f" layoutX="24.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL MATERIAL IN THE DEPARTMENT" wrappingWidth="460.779296875">
+                           <font>
+                              <Font name="Cambria" size="28.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="215.0" layoutY="731.0" onAction="#editAction" prefHeight="34.0" prefWidth="151.0" ripplerFill="#e54343" style="-fx-background-color: #f68a1f;" text="EDIT" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="731.0" onAction="#addAction" prefHeight="34.0" prefWidth="151.0" ripplerFill="#e54343" style="-fx-background-color: #1795a1;" text="ADD" textFill="WHITE" />
+                        <JFXTextField fx:id="txtSearch" focusColor="#c32a2a" layoutX="547.0" layoutY="105.0" prefHeight="24.0" prefWidth="210.0" promptText="Search material" unFocusColor="#721c1c">
+                           <font>
+                              <Font name="Cambria" size="12.0" />
+                           </font>
+                        </JFXTextField>
+                        <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="737.0" layoutY="107.0" onMouseClicked="#searchMatiere" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Search_48px.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" layoutX="606.0" layoutY="731.0" onAction="#refreshData" prefHeight="34.0" prefWidth="151.0" ripplerFill="#368b9e" style="-fx-background-color: #0a9abe;" text="REFRESH" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</FlowPane>

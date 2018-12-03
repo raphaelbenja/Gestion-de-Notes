@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="393.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Loading">
+   <children>
+      <Pane fx:id="pane" prefHeight="400.0" prefWidth="393.0" style="-fx-background-color: #192633;">
+         <effect>
+            <DropShadow height="20.16" radius="8.9875" width="17.79" />
+         </effect>
+         <children>
+            <JFXProgressBar fx:id="progress" layoutX="52.0" layoutY="321.0" prefHeight="4.0" prefWidth="290.0" progress="0.0" />
+            <Text fx:id="loading" fill="#d7d7d7" layoutX="160.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chargement">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img" fitHeight="193.0" fitWidth="367.0" layoutX="52.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notebook.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

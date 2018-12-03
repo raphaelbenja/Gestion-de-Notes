@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane fx:id="root" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NoteController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1000.0" stylesheets="@../styles/style.css">
+               <children>
+                  <Pane prefHeight="785.0" prefWidth="227.0" style="-fx-background-color: #7e0032;">
+                     <children>
+                        <ImageView fitHeight="1851.0" fitWidth="227.0" layoutX="1.0" layoutY="-1067.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/69584758-flat-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="82.0" fitWidth="92.0" layoutX="73.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Downloads/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#cdcdcd" layoutX="67.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raphaeël Benja">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutY="264.0" onMouseClicked="#pageDashboard" opacity="0.8" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="126.0" layoutY="21.0" text="Dashboard" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="1.0" layoutY="-1.0" prefHeight="56.0" prefWidth="3.0" style="-fx-background-color: #a02b40;" />
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="78.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Dashboard_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutY="320.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="122.0" layoutY="20.0" text="Edit profile" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="75.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Profile_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="376.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="123.0" layoutY="20.0" text="Project lists" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="73.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Microsoft%20Project_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="690.0" onMouseClicked="#returnLogin" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="LOG OUT" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="71.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Kurosaki/Videos/Logout%20Rounded%20Up_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="193.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Menu_48px.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROJECTS">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="28.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTERPRISES">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutX="1.0" layoutY="488.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="Print notes" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Crowdfunding_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutX="1.0" layoutY="544.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="All stats" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Price_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane layoutY="600.0" onMouseClicked="#showMerited" prefHeight="56.0" prefWidth="227.0" styleClass="Panel">
+                           <children>
+                              <Label layoutX="114.0" layoutY="20.0" text="Order by" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Team_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="227.0" prefHeight="785.0" prefWidth="777.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="545.0" layoutY="707.0" onAction="#deleteAction" prefHeight="34.0" prefWidth="210.0" ripplerFill="#e54343" style="-fx-background-color: #dd5044;" text="DELETE" textFill="WHITE" />
+                        <Pane prefHeight="56.0" prefWidth="777.0" style="-fx-background-color: #8d2b40;">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="743.0" layoutY="18.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Exit_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Text fill="#6f6f6f" layoutX="98.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE FOR ALL STUDENT IN THE DEPARTMENT">
+                           <font>
+                              <Font name="Cambria" size="28.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="707.0" onAction="#editAction" prefHeight="34.0" prefWidth="210.0" ripplerFill="#e54343" style="-fx-background-color: #f68a1f;" text="EDIT" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="707.0" onAction="#addAction" prefHeight="34.0" prefWidth="210.0" ripplerFill="#e54343" style="-fx-background-color: #1795a1;" text="ADD" textFill="WHITE" />
+                        <JFXComboBox fx:id="idEtud" labelFloat="true" layoutX="24.0" layoutY="167.0" onAction="#comboIdItemStateChanged" prefHeight="25.0" prefWidth="155.0" promptText="Numéro" />
+                        <JFXTextField fx:id="nomEtud" disable="true" editable="false" layoutX="212.0" layoutY="167.0" prefHeight="25.0" prefWidth="353.0" promptText="First name and Last name" />
+                        <JFXTextField fx:id="moyenne" layoutX="343.0" layoutY="651.0" prefHeight="25.0" prefWidth="155.0" promptText="Moyenne" />
+                        <JFXTextField fx:id="observation" layoutX="620.0" layoutY="651.0" promptText="Observation" />
+                        <Label layoutX="262.0" layoutY="655.0" text="Note obtenu :" />
+                        <Label layoutX="539.0" layoutY="655.0" text="Observation :" />
+                        <TableView fx:id="table" layoutX="23.0" layoutY="223.0" prefHeight="413.0" prefWidth="731.0" tableMenuButtonVisible="true">
+                          <columns>
+                              <TableColumn fx:id="matiereColumn" prefWidth="187.0" text="MATIERE" />
+                            <TableColumn fx:id="coefficientColumn" prefWidth="148.0" text="COEFFICIENT" />
+                            <TableColumn fx:id="id2Column" prefWidth="187.0" text="NOTE OBTENU" />
+                              <TableColumn fx:id="ageColumn" prefWidth="194.0" text="NOTE PONDERE" />
+                          </columns>
+                        </TableView>
+                        <JFXTextField fx:id="classe" alignment="CENTER" disable="true" editable="false" layoutX="599.0" layoutY="167.0" prefHeight="25.0" prefWidth="155.0" promptText="Classe" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</FlowPane>

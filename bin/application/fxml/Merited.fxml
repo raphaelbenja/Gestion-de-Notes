@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MeritedController">
+   <children>
+      <StackPane>
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1387.0" style="-fx-background-color: #fff;">
+               <children>
+                  <JFXComboBox fx:id="classe" layoutX="50.0" layoutY="171.0" onAction="#loadNoteMerited" prefHeight="25.0" prefWidth="209.0" promptText="Classe" />
+                  <Pane prefHeight="140.0" prefWidth="1387.0" style="-fx-background-color: #157dc8;">
+                     <children>
+                        <Text fill="WHITE" layoutX="558.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER BY MERITED STUDENT">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="1362.0" layoutY="4.0" onMouseClicked="#closeCurrentWindow" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Exit_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="725.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Graduation%20Cap_96px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#pageMerited" opacity="0.67" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@../images/Next%20page_96px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <JFXButton layoutX="50.0" layoutY="645.0" onAction="#printResult" prefHeight="34.0" prefWidth="161.0" style="-fx-background-color: #157dc8;" text="Print" textFill="WHITE" />
+                  <JFXButton layoutX="236.0" layoutY="645.0" onAction="#loadChart" prefHeight="34.0" prefWidth="161.0" style="-fx-background-color: #dd4f43;" text="Stats for all Student" textFill="WHITE" />
+                  <PieChart fx:id="pie" layoutX="904.0" layoutY="235.0" prefHeight="383.0" prefWidth="438.0" />
+                  <TableView fx:id="table" layoutX="41.0" layoutY="235.0" prefHeight="383.0" prefWidth="818.0" tableMenuButtonVisible="true">
+                    <columns>
+                      <TableColumn fx:id="matiereColumn" prefWidth="132.00003051757812" text="NUMERO" />
+                      <TableColumn fx:id="id2Column" prefWidth="438.0000305175781" text="NOM ET PRENOM" />
+                        <TableColumn fx:id="coefficientColumn" prefWidth="231.0" text="MOYENNE" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

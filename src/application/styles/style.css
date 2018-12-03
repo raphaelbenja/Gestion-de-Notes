@@ -1,0 +1,28 @@
+.Panel:hover{
+	-fx-background-color:  #8d2b40;
+}
+
+.Panel_menu:hover{
+	-fx-background-color: #ad083c;
+}
+
+.JFXTextField{
+	-fx-text-fill : #c5c5c5;
+}
+
+.dialog-button{
+	-fx-text-fill : #fff;
+	-fx-background-color: #13629c;
+	-fx-background-radius: 20px;
+	-fx-pref-width: 80px;
+	-fx-pref-height: 30px;
+}
+
+.close{
+	-fx-text-fill : #ddd;
+}
+
+.close:hover{
+	-fx-background-color: #a33333;
+	-fx-text-fill: #fff;
+}

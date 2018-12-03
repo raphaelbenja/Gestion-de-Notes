@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootp" prefHeight="733.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SplashController">
+   <children>
+      <ImageView fitHeight="733.0" fitWidth="974.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/Kurosaki/Videos/69545131-flat-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <Pane opacity="0.5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="213.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM FOR MANAGEMENT STUDENTS" wrappingWidth="547.13671875">
+               <font>
+                  <Font name="Cambria Bold" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="420.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

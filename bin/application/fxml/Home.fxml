@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1000.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <Pane prefHeight="785.0" prefWidth="227.0" style="-fx-background-color: #7e0032;">
+         <children>
+            <ImageView fitHeight="1851.0" fitWidth="227.0" layoutX="1.0" layoutY="-1067.0" pickOnBounds="true">
+               <image>
+                  <Image url="file:/C:/Users/Kurosaki/Videos/69584758-flat-wallpapers.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="92.0" layoutX="73.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Kurosaki/Downloads/user.png" />
+               </image>
+            </ImageView>
+            <Text fill="#cdcdcd" layoutX="67.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raphaeël Benja">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutY="264.0" opacity="0.8" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="126.0" layoutY="21.0" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font></Label>
+                  <Pane layoutX="1.0" layoutY="-1.0" prefHeight="56.0" prefWidth="3.0" style="-fx-background-color: #a02b40;" />
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="78.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Kurosaki/Videos/Dashboard_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutY="320.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="122.0" layoutY="20.0" text="Edit profile" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="75.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Kurosaki/Videos/Profile_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="376.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="123.0" layoutY="20.0" text="Project lists" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="73.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Videos/Microsoft%20Project_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane fx:id="logout" layoutX="1.0" layoutY="690.0" onMouseClicked="#returnLogin" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="114.0" layoutY="20.0" text="LOG OUT" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="71.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Kurosaki/Videos/Logout%20Rounded%20Up_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="193.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Kurosaki/Videos/Menu_48px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="26.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROJECTS">
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="28.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTERPRISES">
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Text>
+            <Pane layoutX="1.0" layoutY="488.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="114.0" layoutY="20.0" text="Sponsorships" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Videos/Crowdfunding_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="544.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="114.0" layoutY="20.0" text="My prices" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Videos/Price_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutY="600.0" prefHeight="56.0" prefWidth="227.0" styleClass="Panel" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="114.0" layoutY="20.0" text="My team" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="69.0" layoutY="18.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Videos/Team_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="p" layoutX="226.0" layoutY="-1.0" prefHeight="785.0" prefWidth="775.0" style="-fx-background-color: #efefef;" styleClass="Panel_menu" stylesheets="@../styles/style.css">
+         <children>
+            <Pane layoutY="1.0" prefHeight="56.0" prefWidth="775.0" style="-fx-background-color: #8d2b40;">
+               <children>
+                  <Label layoutX="722.0" layoutY="13.0" onMouseClicked="#exit" prefHeight="27.0" prefWidth="20.0" styleClass="close" text="X" textFill="#b5b4b4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="702.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" styleClass="Panel_menu">
+                     <image>
+                        <Image url="file:/C:/Users/Kurosaki/Videos/Menu%202_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="28.0" layoutY="347.0" prefHeight="396.0" prefWidth="720.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <Pane layoutX="26.0" layoutY="22.0" onMouseClicked="#pageStudent" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/69584758-flat-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="68.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiants">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="261.0" layoutY="22.0" onMouseClicked="#pageMatiere" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/16_relegation.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="70.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matières">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="494.0" layoutY="22.0" onMouseClicked="#pageNote" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/notebook.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="80.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="26.0" layoutY="218.0" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/70345650-flat-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="63.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professeur">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="261.0" layoutY="218.0" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/69545131-flat-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="57.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Département">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="494.0" layoutY="218.0" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="161.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/68776338-flat-wallpapers%20(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="74.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classes">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#909090" height="12.1" radius="5.55" width="12.1" />
+                     </effect>
+                  </Pane>
+               </children>
+               <effect>
+                  <DropShadow color="#ababab" />
+               </effect>
+            </Pane>
+            <Pane layoutX="28.0" layoutY="101.0" prefHeight="194.0" prefWidth="720.0">
+               <children>
+                  <Pane layoutX="30.0" layoutY="19.0" onMouseClicked="#pageStudent" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #fff;" stylesheets="@../styles/style.css">
+                     <children>
+                        <Text fill="#3c3c3c" layoutX="65.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etudiants">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalStudent" fill="#3c3c3c" layoutX="89.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="63.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Graduation%20Cap_96px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#c3baba" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="260.0" layoutY="19.0" onMouseClicked="#pageMatiere" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="82.0" layoutX="59.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Comic%20Book_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="68.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matières">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalMatiere" fill="#3c3c3c" layoutX="90.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="58">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#c3baba" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="487.0" layoutY="19.0" onMouseClicked="#pageNote" prefHeight="157.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="82.0" layoutX="64.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Kurosaki/Videos/Literature_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#3c3c3c" layoutX="81.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalNote" fill="#3c3c3c" layoutX="85.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10%">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow color="#c3baba" />
+                     </effect>
+                  </Pane>
+               </children>
+               <effect>
+                  <DropShadow color="#ababab" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
