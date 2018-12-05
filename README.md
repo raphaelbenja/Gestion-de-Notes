@@ -1,6 +1,6 @@
 #Gestion de note des Etudiants en JavaFx
 
-Application de Gestion de note des étudiants
+Application de Gestion de note des étudiants sur l'IDE Eclipse
 
 Cloner et faire ce que vous voulez.
 
